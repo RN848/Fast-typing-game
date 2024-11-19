@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  text-align: center;
+  height: 1000px;
+  background-color: #eee;
+}
+
+.game {
+  min-height: 100vh;
+}
+.game .name {
+  background-color: #2196f3;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.game .container {
+  margin: auto;
+  max-width: 900px;
+}
+.game .container .message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.game .container .message span {
+  font-weight: bold;
+  color: #009688;
+}
+.game .container .message .first-span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.game .container .message .first-span:hover {
+  color: #2196f3;
+}
+.game .container .message .sec-span::before {
+  content: "[ ";
+}
+.game .container .message .sec-span:after {
+  content: " ]";
+}
+.game .container .start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.game .container .start:hover {
+  background-color: #2196f3;
+}
+.game .container .the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: #2196f3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.game .container .input-box {
+  position: relative;
+}
+.game .container .input-box .input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: #2196f3;
+}
+.game .container .input-box .input:focus {
+  outline: none;
+}
+.game .container .input-box span {
+  position: absolute;
+  height: 6px;
+  background-color: #2196f3;
+  left: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  transition: 0.6s;
+}
+.game .container .upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.game .container .upcoming-words div {
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.game .container .control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.game .container .control span {
+  font-weight: bold;
+  color: #009688;
+}
+.game .container .finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.game .container .finish .good {
+  color: #2196f3;
+}
+.game .container .finish .bad {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
